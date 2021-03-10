@@ -30,7 +30,7 @@ void SieveOfEratosthenes(int n) {
 }
  
 // Driver Code
-int main() {
+int main(int argc, char* argv[]) {
 //   if (argc == 1) {
 //     fprintf(stderr, "Usage: %s [num_of_elements]\n", argv[0]);
 //     exit(EXIT_FAILURE);
