@@ -10,7 +10,7 @@ void SieveOfEratosthenes(int n) {
     bool *prime = new bool[n + 1];
     memset(prime, true, n+1); //set all values to true
  
-    cilk_for (int p = 2; p * p <= n; p++) {
+    for (int p = 2; p * p <= n; p++) {
         if (prime[p] == true)
         {
             cilk_for (int i = p * p; i <= n; i += p)
